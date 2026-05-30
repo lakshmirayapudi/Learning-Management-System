@@ -1,0 +1,108 @@
+.App {
+  text-align: center;
+  padding: 40px;
+  background-color: #f4f7fc;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  color: #1e3a8a;
+  margin-bottom: 40px;
+}
+
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.card {
+  background: white;
+  width: 260px;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h2 {
+  color: #2563eb;
+}
+
+.card p {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.task-section {
+  margin-top: 40px;
+}
+
+.add-task input {
+  padding: 12px;
+  width: 280px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.suggestion-list {
+  background: white;
+  width: 300px;
+  margin: 15px auto;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+.suggestion-list p {
+  padding: 8px;
+  margin: 0;
+  border-bottom: 1px solid #eee;
+}
+
+.back-btn {
+  padding: 12px 18px;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.project-list {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  flex-wrap: wrap;
+  margin-top: 35px;
+}
+
+.project-card {
+  background: white;
+  width: 230px;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.12);
+  font-weight: bold;
+  color: #1e3a8a;
+}
+
+@media (max-width: 600px) {
+  .card {
+    width: 85%;
+  }
+
+  .add-task input {
+    width: 90%;
+  }
+}
